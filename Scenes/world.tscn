@@ -7,19 +7,26 @@
 [node name="World" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(568, 362.5)
+position = Vector2(742, 509)
 scale = Vector2(9.875, 6.66406)
 texture = ExtResource("1_mqqng")
 
-[node name="Checkpoint" type="Node2D" parent="."]
-position = Vector2(582, 709)
-scale = Vector2(4.9375, 18.3516)
-
-[node name="End" type="Node2D" parent="."]
+[node name="Enemy checkpoints" type="Node2D" parent="."]
 position = Vector2(1088, 11.0001)
 scale = Vector2(4.9375, 18.3516)
+
+[node name="Checkpoint" type="Node2D" parent="Enemy checkpoints" groups=["enemy chechpoints"]]
+position = Vector2(-102.481, 38.0348)
+scale = Vector2(1, 1)
+
+[node name="Checkpoint2" type="Node2D" parent="Enemy checkpoints" groups=["enemy chechpoints"]]
+position = Vector2(-242.633, 14.9851)
+scale = Vector2(1, 1)
 
 [node name="Tower" parent="." instance=ExtResource("2_0qou7")]
 position = Vector2(765, 365)
 
 [node name="Enemy" parent="." instance=ExtResource("3_30no2")]
+position = Vector2(950, 665)
+
+[node name="Camera2D" type="Camera2D" parent="Enemy"]

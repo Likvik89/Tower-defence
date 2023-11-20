@@ -6,10 +6,13 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hvll5"]
 size = Vector2(128, 128)
 
-[node name="Enemy" type="RigidBody2D"]
+[node name="Enemy" type="RigidBody2D" groups=["Enemies"]]
+gravity_scale = 0.0
+freeze_mode = 1
 script = ExtResource("1_ygs6c")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
 texture = ExtResource("1_88xia")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
