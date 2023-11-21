@@ -17,11 +17,9 @@ scale = Vector2(4.9375, 18.3516)
 
 [node name="Checkpoint" type="Node2D" parent="Enemy checkpoints" groups=["enemy chechpoints"]]
 position = Vector2(-102.481, 38.0348)
-scale = Vector2(1, 1)
 
 [node name="Checkpoint2" type="Node2D" parent="Enemy checkpoints" groups=["enemy chechpoints"]]
 position = Vector2(-242.633, 14.9851)
-scale = Vector2(1, 1)
 
 [node name="Tower" parent="." instance=ExtResource("2_0qou7")]
 position = Vector2(765, 365)
